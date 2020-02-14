@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(mybot_control)
+project(mybot_description)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -77,7 +77,7 @@ find_package(catkin REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES mybot_control
+#  LIBRARIES mybot_description
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
@@ -91,19 +91,19 @@ catkin_package(
 # include_directories(include)
 
 ## Declare a cpp library
-# add_library(mybot_control
-#   src/${PROJECT_NAME}/mybot_control.cpp
+# add_library(mybot_description
+#   src/${PROJECT_NAME}/mybot_description.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(mybot_control_node src/mybot_control_node.cpp)
+# add_executable(mybot_description_node src/mybot_description_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(mybot_control_node mybot_control_generate_messages_cpp)
+# add_dependencies(mybot_description_node mybot_description_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(mybot_control_node
+# target_link_libraries(mybot_description_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -122,7 +122,7 @@ catkin_package(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS mybot_control mybot_control_node
+# install(TARGETS mybot_description mybot_description_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -147,7 +147,7 @@ catkin_package(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_mybot_control.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_mybot_description.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
